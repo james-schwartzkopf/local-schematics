@@ -1,0 +1,12 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "name": "my-schematics",
+  "extends": ["@schematics/angular"],
+  "schematics": {
+    "my-schematic": {
+      "factory": "./collection#mySchematic",
+      "schema": "./src/my-schematic/my-schematic.schema.json",
+      "description": "Schematic my-schematic"
+    }
+  }
+}
